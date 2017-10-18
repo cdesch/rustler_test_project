@@ -14,7 +14,7 @@ mod atoms {
 }
 
 rustler_export_nifs! {
-    "Elixir.MyModule",
+    "Elixir.RustlerTestProject.MyModule",
     [("add", 2, add)],
     None
 }
@@ -25,3 +25,5 @@ fn add<'a>(env: NifEnv<'a>, args: &[NifTerm<'a>]) -> NifResult<NifTerm<'a>> {
 
     Ok((atoms::ok(), num1 + num2).encode(env))
 }
+
+

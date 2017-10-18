@@ -15,4 +15,10 @@ defmodule RustlerTestProject do
   def hello do
     :world
   end
+
+  #RustlerTestProject.nif_add
+  def nif_add do
+    IO.inspect RustlerTestProject.MyModule.add(1,2)
+  end
 end
+
