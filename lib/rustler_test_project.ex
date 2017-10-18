@@ -20,5 +20,10 @@ defmodule RustlerTestProject do
   def nif_add do
     IO.inspect RustlerTestProject.MyModule.add(1,2)
   end
+
+   #RustlerTestProject.nif_mult_plus_one
+   def nif_mult_plus_one do
+    IO.inspect RustlerTestProject.MyModule.mult_plus_one(2,2)
+  end
 end
 
